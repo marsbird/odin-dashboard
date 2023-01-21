@@ -49,4 +49,39 @@ main {
     background-color: palevioletred;
     grid-row: 2;
     grid-column: 2;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+}
+
+main .projects {
+    grid-row: 1 / span 2;
+    grid-column: 1;
+}
+
+main .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+main .card {
+    border: 1px solid black;
+}
+
+.announcements {
+    grid-row: 1;
+    grid-column: 2
+}
+
+.trending {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.trending .grid {
+    grid-template-columns: auto 1fr;
+    row-gap: 1rem;
+}
+
+.trending img {
+    height: 2rem;
 }
