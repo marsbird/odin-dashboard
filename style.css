@@ -57,6 +57,14 @@ nav {
     align-content: start;
 }
 
+nav > div {
+    grid-template-columns: auto 1fr;
+}
+
+nav img {
+    height: 1rem;
+}
+
 main {
     background-color: palevioletred;
     grid-row: 2;
