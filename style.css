@@ -27,6 +27,10 @@ time, mark, audio, video {
     display: grid;
 }
 
+.flex {
+    display: flex;
+}
+
 body {
     grid-template-columns: 1fr 4fr;
 }
