@@ -41,6 +41,14 @@ header {
     grid-column: 2;
 }
 
+header > .container.flex {
+    justify-content: space-between;
+}
+
+header img {
+    height: 2rem;
+}
+
 nav {
     background-color: mediumseagreen;
     grid-row: 1 / span 2;
