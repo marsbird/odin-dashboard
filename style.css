@@ -31,8 +31,17 @@ time, mark, audio, video {
     display: flex;
 }
 
+.small-icon {
+    height: 1rem;
+}
+
+.medium-icon {
+    height: 2rem;
+}
+
 body {
-    grid-template-columns: 1fr 4fr;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-template-columns: 13rem 1fr;
 }
 
 header {
@@ -45,24 +54,31 @@ header > .container.flex {
     justify-content: space-between;
 }
 
-header img {
-    height: 2rem;
-}
-
-nav {
+nav.grid {
     background-color: mediumseagreen;
-    grid-row: 1 / span 2;
-    grid-column: 1;
-    gap: 1rem;
-    align-content: start;
-}
+    grid-area: 1 / 1 / span 2 / 1;
+    padding: 1rem;
 
-nav > div {
     grid-template-columns: auto 1fr;
+    gap: 0.5rem;
+    align-content: start;
+    align-items: center;
 }
 
-nav img {
-    height: 1rem;
+nav.grid > h1 {
+    font-size: 1.5rem;
+}
+
+nav.grid > img {
+    justify-self: center;
+}
+
+nav.grid > hr {
+    grid-column: 1 / span 2;
+    width: 80%;
+    height: 1px;
+    background-color: black;
+    border: none;
 }
 
 main {
@@ -100,8 +116,4 @@ main .card {
 .trending .grid {
     grid-template-columns: auto 1fr;
     row-gap: 1rem;
-}
-
-.trending img {
-    height: 2rem;
 }
